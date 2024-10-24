@@ -90,7 +90,7 @@ const Form = () => {
           />
         </div>
 
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">
             Last Name <span className="text-red-500">*</span>
           </label>
@@ -130,14 +130,14 @@ const Form = () => {
             required
             className="mt-1 p-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        </div>
+        </div> */}
 
-        <button
+        {/* <button
           onClick={fillPdf}
           className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
           Generate Filled PDF
-        </button>
+        </button> */}
       </div>
     </div>
   );
