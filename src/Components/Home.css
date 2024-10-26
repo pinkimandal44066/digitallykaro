@@ -1,0 +1,193 @@
+/* @keyframes moveAndStopDiv1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    40%, 60% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveAndStopDiv2 {
+    0% {
+      transform: translateX(100%);
+    }
+    40%, 60% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(100%); 
+    }
+  }
+  
+  .animate-div1 {
+    animation: moveAndStopDiv1 8s ease-in-out infinite;
+  }
+  
+  .animate-div2 {
+    animation: moveAndStopDiv2 8s ease-in-out infinite;
+  }
+  
+ 
+  @media (max-width: 1536px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 7s;
+    }
+  }
+  
+  @media (max-width: 1280px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 6s;
+    }
+  }
+  
+  @media (max-width: 1024px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 5s;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 4.5s;
+    }
+  }
+  
+  @media (max-width: 640px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 4s;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 3.5s;
+    }
+  }
+  
+  @media (max-width: 360px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 3s;
+    }
+  }
+  
+  @media (max-width: 320px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 2.5s;
+    }
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @keyframes moveAndStopDiv1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    40%, 60% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveAndStopDiv2 {
+    0% {
+      transform: translateX(100%);
+    }
+    40%, 60% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-div1 {
+    animation: moveAndStopDiv1 8s ease-in-out 1; 
+  }
+  
+  .animate-div2 {
+    animation: moveAndStopDiv2 8s ease-in-out 1;
+  }
+  
+
+  @media (max-width: 1536px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 7s;
+    }
+  }
+  
+  @media (max-width: 1280px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 6s;
+    }
+  }
+  
+  @media (max-width: 1024px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 5s;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 4.5s;
+    }
+  }
+  
+  @media (max-width: 640px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 4s;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 3.5s;
+    }
+  }
+  
+  @media (max-width: 360px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 3s;
+    }
+  }
+  
+  @media (max-width: 320px) { 
+    .animate-div1,
+    .animate-div2 {
+      animation-duration: 2.5s;
+    }
+  }
+  
