@@ -119,7 +119,13 @@ const ContactPage = () => {
             data-aos-delay="200"
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Phone</h3>
-            <p className="text-gray-600">+91 1234 5689</p>
+            <p className="text-gray-600">
+  <a href="tel:+9112345689" className="text-gray-600 hover:underline">
+    +91 1234 5689
+  </a>
+</p>
+
+            {/* <p className="text-gray-600">+91 1234 5689</p> */}
             <p className="text-gray-500 text-sm mt-2">
               Mon - Fri, 9:00am - 6:00pm
             </p>

@@ -462,9 +462,14 @@ const Footer = () => {
             <p className="font-semibold mt-3 lg:text-2xl md:text-2xl text-lg">
               For sales enquiries:
             </p>
-            <p className="font-light opacity-90 tracking-wide text-xl mt-2">
+            {/* <p className="font-light opacity-90 tracking-wide text-xl mt-2">
               +91 1234 5689
-            </p>
+            </p> */}
+<p className="font-light opacity-90 tracking-wide text-xl mt-2">
+  <a href="tel:+9112345689" className="text-blue-600 hover:underline">
+    +91 1234 5689
+  </a>
+</p>
 
             <p className="font-semibold mt-3 lg:text-2xl md:text-2xl text-lg">
               Email:
