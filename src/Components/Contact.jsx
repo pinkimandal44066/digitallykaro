@@ -261,7 +261,7 @@ const ContactPage = () => {
   
   }}
 >
-  <div className="container mx-auto">
+  <div className=" mx-auto">
     <div className="flex flex-col md:flex-row md:space-x-12 justify-center">
       {/* Contact Form */}
       <div className="w-full mb-12 md:mb-0" data-aos="fade-right">
