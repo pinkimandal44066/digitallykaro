@@ -89,7 +89,7 @@ const ContactPage = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      {/* <div className="relative bg-purple-700 py-20">
+      <div className="relative bg-purple-700 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white">
             {" "}
@@ -135,7 +135,7 @@ const ContactPage = () => {
             <p className="text-gray-600 mt-2">support@itcompany.com</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <Toaster />
       {/* <section id="contact" className="py-16 px-4 md:px-8 lg:px-20">
@@ -261,7 +261,7 @@ const ContactPage = () => {
   
   }}
 >
-  <div className=" mx-auto">
+  <div className="container mx-auto">
     <div className="flex flex-col md:flex-row md:space-x-12 justify-center">
       {/* Contact Form */}
       <div className="w-full mb-12 md:mb-0" data-aos="fade-right">
