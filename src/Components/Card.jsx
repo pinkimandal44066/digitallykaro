@@ -584,7 +584,8 @@ Hear from Our Valued Partners
               <div
                 data-aos="fade-up"
                 data-aos-duration="300"
-                className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
+                className="flex flex-col justify-center items-center 
+                gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-[#6A0DAD]  bg-primary/10 relative"
               >
                 <img
                   src={img}

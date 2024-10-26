@@ -52,11 +52,19 @@ const Home = () => {
             Empowering businesses with innovative digital marketing solutions.
           </p>
           <a
+          href="#contact"
+          className="inline-block bg-[#6A0DAD]
+           text-white text-lg font-semibold px-8 py-4 mt-4 rounded-lg transition-transform transform
+            hover:scale-105 focus:ring-4 focus:ring-white  focus:outline-none"
+        >
+          Get Started
+        </a>
+          {/* <a
             href="#contact"
             className="mt-4 bg-[#6A0DAD] text-white hover:text-black py-2 px-4 rounded-lg hover:bg-white transition duration-300"
           >
             Get Started
-          </a>
+          </a> */}
         </div>
 
 
