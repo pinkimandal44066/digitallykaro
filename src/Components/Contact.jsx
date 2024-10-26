@@ -89,7 +89,7 @@ const ContactPage = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
-      <div className="relative bg-purple-700 py-20">
+      {/* <div className="relative bg-purple-700 py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white">
             {" "}
@@ -135,7 +135,7 @@ const ContactPage = () => {
             <p className="text-gray-600 mt-2">support@itcompany.com</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Toaster />
       {/* <section id="contact" className="py-16 px-4 md:px-8 lg:px-20">
@@ -250,7 +250,7 @@ const ContactPage = () => {
       </section> */}
 
 
-{/* 
+
 <section
   id="contact"
   className="py-16 mt-8 px-4 md:px-8 lg:px-20 bg-cover bg-center"
@@ -263,14 +263,14 @@ const ContactPage = () => {
 >
   <div className="container mx-auto">
     <div className="flex flex-col md:flex-row md:space-x-12 justify-center">
-      
+      {/* Contact Form */}
       <div className="w-full mb-12 md:mb-0" data-aos="fade-right">
         <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
           <h3 className="text-2xl md:text-4xl text-[#6A0DAD] font-semibold mb-6">
             Enquiry
           </h3>
           <form onSubmit={handleSubmit}>
-            
+            {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="firstName" className="block text-gray-700">
@@ -304,7 +304,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-          
+            {/* Second Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label htmlFor="email" className="block text-gray-700">
@@ -338,7 +338,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-          
+            {/* Message Field */}
             <div className="mb-6">
               <label htmlFor="message" className="block text-gray-700">
                 Message
@@ -355,7 +355,7 @@ const ContactPage = () => {
               ></textarea>
             </div>
 
-         
+            {/* Send Message Button */}
             <button
               type="submit"
               className="w-full bg-[#6A0DAD] text-white py-3 px-6 rounded-md hover:bg-black transition duration-300"
@@ -367,7 +367,7 @@ const ContactPage = () => {
       </div>
     </div>
   </div>
-</section> */}
+</section>
 
     </div>
   );
