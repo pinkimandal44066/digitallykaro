@@ -22,13 +22,13 @@ const App = () => {
       {/* <HeroSection /> */}
       <Navbar />
 <Home />
-      <AboutUs />
+      {/* <AboutUs />
       <Services />
       <Herosection />
-      {/* <Card /> */}
+      <Card />
       <ContactForm />
 
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }

@@ -36,39 +36,11 @@ const ZoomInOutOnScroll = () => {
   }, []);
 
   return (
-    // <div
-    //   className="relative bg-cover bg-center"
-    //   style={{
-    //     backgroundImage: `url(${aboutus})`,
-    //   }}
-    // >
-    //   <div className="absolute inset-0 bg-black opacity-50"></div>
+  
 
-    //   <div className="relative max-w-7xl mx-auto py-20 px-5 md:px-10 lg:px-20 text-center text-white">
-    //     <h1
-    //       data-aos="fade-up"
-    //       className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500"
-    //     >
-    //       About Us
-    //     </h1>
-    //     <p
-    //       data-aos="fade-up"
-    //       data-aos-delay="200"
-    //       className="text-lg md:text-xl lg:text-2xl mb-6"
-    //     >
-    //       We provide innovative solutions that help businesses grow and thrive
-    //       in today's fast-paced digital landscape.
-    //     </p>
-    //     <p
-    //       data-aos="fade-up"
-    //       data-aos-delay="400"
-    //       className="text-sm md:text-base lg:text-lg mb-8"
-    //     >
-    //       Our dedicated team delivers high-quality services tailored to your
-    //       specific needs, ensuring excellence at every step.
-    //     </p>
-    //   </div>
-    // </div>
+<>
+
+<section  id="about">
 
 <div
   className="relative bg-cover bg-center mt-10"
@@ -107,6 +79,8 @@ const ZoomInOutOnScroll = () => {
     </p>
   </div>
 </div>
+</section>
+</>
 
     
   );

@@ -393,9 +393,11 @@ const TestimonialsSlider = () => {
       },
     ],
   };
-
+  
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+   <>
+   <section  id="testimonials">
+   <div className="max-w-7xl mx-auto px-4 py-10">
       <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
       Our Clients’ Experiences
       </h2>
@@ -455,6 +457,8 @@ const TestimonialsSlider = () => {
         </div>
       </Slider>
     </div>
+   </section>
+   </>
   );
 };
 

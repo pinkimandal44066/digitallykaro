@@ -30,7 +30,9 @@ const CardsData = [
 const BlogCards = () => {
   return (
     <>
-      <div className="relative w-full lg:h-[45vw] overflow-hidden ">
+   <section  id="services">
+
+   <div className="relative w-full lg:h-[45vw] overflow-hidden ">
         <div className="absolute top-0 left-0 w-full h-full bg-animation z-0"></div>
 
         <div className="relative container mx-auto px-4 py-20 z-10">
@@ -79,6 +81,7 @@ const BlogCards = () => {
           </div>
         </div>
       </div>
+   </section>
 
       {/* <Blogtwo /> */}
     </>
