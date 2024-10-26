@@ -469,99 +469,136 @@
 
 
 
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './Card.css';
 
-const TestimonialsSlider = () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const testimonialData = [
+  {
+    id: 1,
+    name: "Samuel",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/101/101",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/102/102",
+  },
+  {
+    id: 3,
+    name: "Smith",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    img: "https://picsum.photos/103/103",
+  },
+];
+
+const Scrollslider = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
-    pauseOnHover: false,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
     responsive: [
+      {
+        breakpoint: 10000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration
+      once: false,     // Animation will happen every time the element comes into view
+    });
+  }, []);
+
   return (
-    <section id="testimonials">
-      <div className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
-          Our Clients’ Experiences
-        </h2>
+    <>
+      <div data-aos="zoom-in" className="text-center mb-20 max-w-[400px] mx-auto">
+        <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+          Our Services
+        </p>
+        <h1 className="text-3xl font-bold">
+          Empowering Your Business with Cutting-Edge IT Solutions
+        </h1>
+        <p className="text-xs text-gray-400">
+          We offer a range of innovative services, from web development and cloud integration
+          to cybersecurity and IT consulting. Our expert team is dedicated to helping your business
+          achieve technological excellence and stay ahead in the digital landscape.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 max-w-[800px] mx-auto gap-6 mb-10">
         <Slider {...settings}>
-          <div className="p-6 slider-item">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <img
-                src="https://img.freepik.com/free-photo/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-                alt="Client Feedback"
-                className="mb-4 w-full h-40 object-cover rounded-md"
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Excellent Service
-              </h3>
-              <p className="text-gray-700">
-                "Our experience was outstanding. The team was professional, and the service they provided exceeded our expectations."
-              </p>
-              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+          {testimonialData.map(({ id, name, text, img }) => (
+            <div key={id} className="my-6">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="300"
+                className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative"
+              >
+                <img
+                  src={img}
+                  alt={name}
+                  className="rounded-full block mx-auto"
+                />
+                <h1 className="text-xl font-bold">{name}</h1>
+                <p className="text-gray-500 text-sm">{text}</p>
+                <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
+                  ,,
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="p-6 slider-item">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <img
-                src="https://img.freepik.com/free-photo/photorealistic-tree-with-branches-trunk-outside-nature_23-2151478142.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-                alt="Client Feedback"
-                className="mb-4 w-full h-40 object-cover rounded-md"
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Highly Recommended
-              </h3>
-              <p className="text-gray-700">
-                "Working with this team has been a game-changer for our business. Exceptional support and attention to detail."
-              </p>
-              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
-            </div>
-          </div>
-
-          <div className="p-6 slider-item">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <img
-                src="https://img.freepik.com/premium-photo/wallpaper-illustration_1037184-76993.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-                alt="Client Feedback"
-                className="mb-4 w-full h-40 object-cover rounded-md"
-              />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Great Results
-              </h3>
-              <p className="text-gray-700">
-                "Their expertise helped us achieve results beyond our initial goals. Truly professional and knowledgeable."
-              </p>
-              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
-            </div>
-          </div>
+          ))}
         </Slider>
       </div>
-    </section>
+    </>
   );
 };
 
-export default TestimonialsSlider;
+export default  Scrollslider;
