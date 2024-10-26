@@ -25,7 +25,7 @@ const App = () => {
       <AboutUs />
       <Services />
       {/* <Herosection /> */}
-      {/* <Card /> */}
+      <Card />
       <ContactForm />
 
       <Footer />
