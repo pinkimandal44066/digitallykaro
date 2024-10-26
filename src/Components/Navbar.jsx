@@ -313,11 +313,208 @@
 
 
 
+// import { useState, useEffect } from "react";
+// import { FiMenu } from "react-icons/fi";
+// import { IoCloseOutline } from "react-icons/io5";
+// import loogo from "../../public/Images/loo.jpg";
+// import { NavLink } from "react-router-dom";
+
+// const Navbar = () => {
+//   const [isSideMenuOpen, setMenu] = useState(false);
+//   const [isScrolled, setScrolled] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setScrolled(window.scrollY > 50);
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return (
+//     <header
+//       className={`fixed w-full top-0 left-0 z-50 transition-colors duration-300 ease-in-out ${
+//         isScrolled ? "bg-[#6A0DAD] shadow-lg" : "bg-transparent"
+//       }`}
+//     >
+//       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+//         {/* Logo */}
+//         <a href="/" className="flex items-center">
+//           <img
+//             className="w-14 h-14 sm:w-20 sm:h-20 rounded-full"
+//             src={loogo}
+//             alt="Logo"
+//           />
+//         </a>
+
+//         {/* Desktop Links */}
+//         <nav className="hidden md:flex space-x-8 lg:space-x-12 text-white font-semibold text-2xl">
+//           <a href="#home" className="hover:text-gray-300">Home</a>
+//           <a href="#about" className="hover:text-gray-300">About Us</a>
+//           <a href="#services" className="hover:text-gray-300">Services</a>
+//           <a href="#testimonials" className="hover:text-gray-300">Testimonials</a>
+//           <a href="#contact" className="hover:text-gray-300">Contact Us</a>
+//         </nav>
+
+//         {/* Mobile Menu Button */}
+//         <div className="block md:hidden">
+//           <FiMenu
+//             onClick={() => setMenu(true)}
+//             className="text-4xl text-white cursor-pointer"
+//           />
+//         </div>
+//       </div>
+
+//       {/* Side Menu */}
+//       {isSideMenuOpen && (
+//         <div className="fixed h-screen overflow-auto w-full z-[999] bg-black bg-opacity-50 backdrop-blur-sm top-0 right-0">
+//           <section className="bg-[#6A0DAD] text-white max-h-screen overflow-y-auto flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-full text-center flex">
+//             <IoCloseOutline
+//               onClick={() => setMenu(false)}
+//               className="mt-1 mb-12 right-7 top-2 w-14 h-14 text-4xl text-white rounded-full cursor-pointer bg-black absolute"
+//             />
+
+//             <a href="/">
+//               <img
+//                 className="absolute top-2 left-7 mt-1 rounded-full opacity-90 w-14 sm:w-20"
+//                 src={loogo}
+//                 alt="Logo"
+//               />
+//             </a>
+
+//             <a href="/" className="text-white text-3xl font-bold">Home</a>
+//             <a href="/aboutus" className="text-white text-3xl font-bold">About Us</a>
+//             <a href="/services" className="text-white text-3xl font-bold">Services</a>
+//             <a href="/testimonials" className="text-white text-3xl font-bold">Testimonials</a>
+//             <a href="/blog" className="text-white text-3xl font-bold">Contact Us</a>
+//           </section>
+//         </div>
+//       )}
+
+//       {/* Overlay */}
+//       {isSideMenuOpen && (
+//         <div
+//           onClick={() => setMenu(false)}
+//           className="fixed inset-0 bg-black bg-opacity-50 z-30"
+//         ></div>
+//       )}
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+// import { useState, useEffect } from "react";
+// import { FiMenu } from "react-icons/fi";
+// import { IoCloseOutline } from "react-icons/io5";
+// import loogo from "../../public/Images/loo.jpg";
+
+// const Navbar = () => {
+//   const [isSideMenuOpen, setMenu] = useState(false);
+//   const [isScrolled, setScrolled] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setScrolled(window.scrollY > 50);
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   const handleScrollToSection = (event, id) => {
+//     event.preventDefault();
+//     setMenu(false); // Close menu on mobile
+//     const section = document.querySelector(id);
+//     section.scrollIntoView({ behavior: "smooth" });
+//   };
+
+//   return (
+//     <header
+//       className={`fixed w-full top-0 left-0 z-50 transition-colors duration-300 ease-in-out ${
+//         isScrolled ? "bg-[#6A0DAD] shadow-lg" : "bg-transparent"
+//       }`}
+//     >
+//       <div className="max-w-screen-xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+//         {/* Logo */}
+//         <a href="/" className="flex items-center">
+//           <img
+//             className="w-14 h-14 sm:w-20 sm:h-20 rounded-full"
+//             src={loogo}
+//             alt="Logo"
+//           />
+//         </a>
+
+//         {/* Desktop Links */}
+//         <nav className="hidden md:flex space-x-8 lg:space-x-12 text-white font-semibold text-2xl">
+//           <a href="#home" onClick={(e) => handleScrollToSection(e, "#home")} className="hover:text-gray-300">Home</a>
+//           <a href="#about" onClick={(e) => handleScrollToSection(e, "#about")} className="hover:text-gray-300">About Us</a>
+//           <a href="#services" onClick={(e) => handleScrollToSection(e, "#services")} className="hover:text-gray-300">Services</a>
+//           <a href="#testimonials" onClick={(e) => handleScrollToSection(e, "#testimonials")} className="hover:text-gray-300">Testimonials</a>
+//           <a href="#contact" onClick={(e) => handleScrollToSection(e, "#contact")} className="hover:text-gray-300">Contact Us</a>
+//         </nav>
+
+//         {/* Mobile Menu Button */}
+//         <div className="block md:hidden">
+//           <FiMenu
+//             onClick={() => setMenu(true)}
+//             className="text-4xl text-white cursor-pointer"
+//           />
+//         </div>
+//       </div>
+
+//       {/* Side Menu */}
+//       {isSideMenuOpen && (
+//         <div className="fixed h-screen overflow-auto w-full z-[999] bg-black bg-opacity-50 backdrop-blur-sm top-0 right-0">
+//           <section className="bg-[#6A0DAD] text-white max-h-screen overflow-y-auto flex-col absolute left-0 top-0 h-screen p-8 gap-8 z-50 w-full text-center flex">
+//             <IoCloseOutline
+//               onClick={() => setMenu(false)}
+//               className="mt-1 mb-12 right-7 top-2 w-14 h-14 text-4xl text-white rounded-full cursor-pointer bg-black absolute"
+//             />
+
+//             <a href="/" className="text-white text-3xl font-bold">Home</a>
+//             <a href="#about" onClick={(e) => handleScrollToSection(e, "#about")} className="text-white text-3xl font-bold">About Us</a>
+//             <a href="#services" onClick={(e) => handleScrollToSection(e, "#services")} className="text-white text-3xl font-bold">Services</a>
+//             <a href="#testimonials" onClick={(e) => handleScrollToSection(e, "#testimonials")} className="text-white text-3xl font-bold">Testimonials</a>
+//             <a href="#contact" onClick={(e) => handleScrollToSection(e, "#contact")} className="text-white text-3xl font-bold">Contact Us</a>
+//           </section>
+//         </div>
+//       )}
+
+//       {/* Overlay */}
+//       {isSideMenuOpen && (
+//         <div
+//           onClick={() => setMenu(false)}
+//           className="fixed inset-0 bg-black bg-opacity-50 z-30"
+//         ></div>
+//       )}
+//     </header>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import loogo from "../../public/Images/loo.jpg";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isSideMenuOpen, setMenu] = useState(false);
@@ -331,6 +528,20 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleScrollToSection = (event, id) => {
+    event.preventDefault();
+    setMenu(false); // Mobile pe menu close karte hain
+
+    const section = document.querySelector(id);
+    const headerOffset = document.querySelector("header").offsetHeight; // Header ki height le rahe hain
+    const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: "smooth"
+    });
+  };
 
   return (
     <header
@@ -350,11 +561,11 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <nav className="hidden md:flex space-x-8 lg:space-x-12 text-white font-semibold text-2xl">
-          <a href="#home" className="hover:text-gray-300">Home</a>
-          <a href="#about" className="hover:text-gray-300">About Us</a>
-          <a href="#services" className="hover:text-gray-300">Services</a>
-          <a href="#testimonials" className="hover:text-gray-300">Testimonials</a>
-          <a href="#contact" className="hover:text-gray-300">Contact Us</a>
+          <a href="#home" onClick={(e) => handleScrollToSection(e, "#home")} className="hover:text-gray-300">Home</a>
+          <a href="#about" onClick={(e) => handleScrollToSection(e, "#about")} className="hover:text-gray-300">About Us</a>
+          <a href="#services" onClick={(e) => handleScrollToSection(e, "#services")} className="hover:text-gray-300">Services</a>
+          <a href="#testimonials" onClick={(e) => handleScrollToSection(e, "#testimonials")} className="hover:text-gray-300">Testimonials</a>
+          <a href="#contact" onClick={(e) => handleScrollToSection(e, "#contact")} className="hover:text-gray-300">Contact Us</a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -375,19 +586,11 @@ const Navbar = () => {
               className="mt-1 mb-12 right-7 top-2 w-14 h-14 text-4xl text-white rounded-full cursor-pointer bg-black absolute"
             />
 
-            <a href="/">
-              <img
-                className="absolute top-2 left-7 mt-1 rounded-full opacity-90 w-14 sm:w-20"
-                src={loogo}
-                alt="Logo"
-              />
-            </a>
-
             <a href="/" className="text-white text-3xl font-bold">Home</a>
-            <a href="/aboutus" className="text-white text-3xl font-bold">About Us</a>
-            <a href="/services" className="text-white text-3xl font-bold">Services</a>
-            <a href="/testimonials" className="text-white text-3xl font-bold">Testimonials</a>
-            <a href="/blog" className="text-white text-3xl font-bold">Contact Us</a>
+            <a href="#about" onClick={(e) => handleScrollToSection(e, "#about")} className="text-white text-3xl font-bold">About Us</a>
+            <a href="#services" onClick={(e) => handleScrollToSection(e, "#services")} className="text-white text-3xl font-bold">Services</a>
+            <a href="#testimonials" onClick={(e) => handleScrollToSection(e, "#testimonials")} className="text-white text-3xl font-bold">Testimonials</a>
+            <a href="#contact" onClick={(e) => handleScrollToSection(e, "#contact")} className="text-white text-3xl font-bold">Contact Us</a>
           </section>
         </div>
       )}
@@ -404,6 +607,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-

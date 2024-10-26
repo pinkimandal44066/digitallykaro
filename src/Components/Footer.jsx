@@ -501,27 +501,31 @@ const Footer = () => {
               <h1 className="font-bold lg:text-3xl md:text-2xl text-lg">
                 Quick Menu
               </h1>
+              <a href="#home" 
+              className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
+              Home
+              </a>
               <a
-                href="#"
+                href="#about"
                 className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide"
               >
                 About Us
               </a>
-              <p className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
-                Residential
-              </p>
-              <p className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
-                Commercial
-              </p>
+              <a href="#services" 
+              className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
+              Services
+              </a>
+              <a  href="#testimonials"
+               className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
+              Testimonials
+              </a>
               <a
-                href="#"
+                href="#contact"
                 className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide"
               >
-                Blogs
+                Contact Us
               </a>
-              <p className="lg:my-3 mt-1 lg:text-2xl md:text-xl text-lg font-light opacity-90 tracking-wide">
-                Careers
-              </p>
+             
             </div>
             <div className="flex mt-10 lg:mt-0 md:mt-0 sm:mt-0 flex-col">
               <h1 className="font-bold lg:text-3xl md:text-2xl text-lg">

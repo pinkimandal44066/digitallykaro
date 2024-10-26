@@ -110,7 +110,7 @@ const ContactPage = () => {
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Our Address
             </h3>
-            <p className="text-gray-600">123 IT Park, Tech Street, Dhanbad</p>
+            <p className="text-gray-600">Kolkata, West Bengal 700026</p>
           </div>
 
           <div
@@ -119,7 +119,7 @@ const ContactPage = () => {
             data-aos-delay="200"
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Phone</h3>
-            <p className="text-gray-600">+91 98765 43210</p>
+            <p className="text-gray-600">+91 1234 5689</p>
             <p className="text-gray-500 text-sm mt-2">
               Mon - Fri, 9:00am - 6:00pm
             </p>
@@ -131,8 +131,8 @@ const ContactPage = () => {
             data-aos-delay="400"
           >
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Email</h3>
-            <p className="text-gray-600">info@itcompany.com</p>
-            <p className="text-gray-600 mt-2">support@itcompany.com</p>
+            <p className="text-gray-600">info@iiitcompany.com</p>
+            <p className="text-gray-600 mt-2">support@iiitcompany.com</p>
           </div>
         </div>
       </div>

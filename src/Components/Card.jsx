@@ -559,17 +559,21 @@ const Scrollslider = () => {
 
   return (
     <>
-      <div data-aos="zoom-in" className="text-center mb-20 max-w-[400px] mx-auto">
+
+
+    <secetion  id="testimonials">
+        <div data-aos="zoom-in" className="text-center mb-20 max-w-[400px] mx-auto">
         <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
           Our Services
         </p>
         <h1 className="text-3xl font-bold">
-          Empowering Your Business with Cutting-Edge IT Solutions
+         
+Here's a digitally styled testimonials content example for your company:
+
+Hear from Our Valued Partners
         </h1>
         <p className="text-xs text-gray-400">
-          We offer a range of innovative services, from web development and cloud integration
-          to cybersecurity and IT consulting. Our expert team is dedicated to helping your business
-          achieve technological excellence and stay ahead in the digital landscape.
+        "ETNA Word’s innovative IT solutions transformed our business operations. Their expertise in web development and cloud integration was evident from day one. Our company now runs more efficiently, securely, and is fully prepared for future growth. We couldn’t be happier!"
         </p>
       </div>
 
@@ -597,6 +601,7 @@ const Scrollslider = () => {
           ))}
         </Slider>
       </div>
+    </secetion>
     </>
   );
 };
