@@ -363,10 +363,128 @@
 
 
 
+// import React from "react";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// const TestimonialsSlider = () => {
+//   const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1000,
+//     pauseOnHover: false, 
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//   };
+  
+//   return (
+//    <>
+//    <section  id="testimonials">
+//    <div className="max-w-7xl mx-auto px-4 py-10">
+//       <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
+//       Our Clients’ Experiences
+//       </h2>
+//       <Slider {...settings}>
+//         <div className="p-6">
+//           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+//             <img
+//               src="https://img.freepik.com/free-photo/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+//               alt="Client Feedback"
+//               className="mb-4 w-full h-40 object-cover rounded-md"
+//             />
+//             <h3 className="text-lg font-semibold text-gray-900 mb-2">
+//               Excellent Service
+//             </h3>
+//             <p className="text-gray-700">
+//               "Our experience was outstanding. The team was professional, and
+//               the service they provided exceeded our expectations."
+//             </p>
+//             <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+//           </div>
+//         </div>
+
+//         <div className="p-6">
+//           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+//             <img
+//               src="https://img.freepik.com/free-photo/photorealistic-tree-with-branches-trunk-outside-nature_23-2151478142.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+//               alt="Client Feedback"
+//               className="mb-4 w-full h-40 object-cover rounded-md"
+//             />
+//             <h3 className="text-lg font-semibold text-gray-900 mb-2">
+//               Highly Recommended
+//             </h3>
+//             <p className="text-gray-700">
+//               "Working with this team has been a game-changer for our business.
+//               Exceptional support and attention to detail."
+//             </p>
+//             <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+//           </div>
+//         </div>
+
+//         <div className="p-6">
+//           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+//             <img
+//               src="https://img.freepik.com/premium-photo/wallpaper-illustration_1037184-76993.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+//               alt="Client Feedback"
+//               className="mb-4 w-full h-40 object-cover rounded-md"
+//             />
+//             <h3 className="text-lg font-semibold text-gray-900 mb-2">
+//               Great Results
+//             </h3>
+//             <p className="text-gray-700">
+//               "Their expertise helped us achieve results beyond our initial
+//               goals. Truly professional and knowledgeable."
+//             </p>
+//             <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+//           </div>
+//         </div>
+//       </Slider>
+//     </div>
+//    </section>
+//    </>
+//   );
+// };
+
+// export default TestimonialsSlider;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './Card.css';
 
 const TestimonialsSlider = () => {
   const settings = {
@@ -377,7 +495,7 @@ const TestimonialsSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    pauseOnHover: false, 
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -393,72 +511,67 @@ const TestimonialsSlider = () => {
       },
     ],
   };
-  
+
   return (
-   <>
-   <section  id="testimonials">
-   <div className="max-w-7xl mx-auto px-4 py-10">
-      <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
-      Our Clients’ Experiences
-      </h2>
-      <Slider {...settings}>
-        <div className="p-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="https://img.freepik.com/free-photo/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-              alt="Client Feedback"
-              className="mb-4 w-full h-40 object-cover rounded-md"
-            />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Excellent Service
-            </h3>
-            <p className="text-gray-700">
-              "Our experience was outstanding. The team was professional, and
-              the service they provided exceeded our expectations."
-            </p>
-            <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+    <section id="testimonials">
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
+          Our Clients’ Experiences
+        </h2>
+        <Slider {...settings}>
+          <div className="p-6 slider-item">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <img
+                src="https://img.freepik.com/free-photo/landscape-morning-fog-mountains-with-hot-air-balloons-sunrise_335224-794.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+                alt="Client Feedback"
+                className="mb-4 w-full h-40 object-cover rounded-md"
+              />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Excellent Service
+              </h3>
+              <p className="text-gray-700">
+                "Our experience was outstanding. The team was professional, and the service they provided exceeded our expectations."
+              </p>
+              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+            </div>
           </div>
-        </div>
 
-        <div className="p-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="https://img.freepik.com/free-photo/photorealistic-tree-with-branches-trunk-outside-nature_23-2151478142.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-              alt="Client Feedback"
-              className="mb-4 w-full h-40 object-cover rounded-md"
-            />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Highly Recommended
-            </h3>
-            <p className="text-gray-700">
-              "Working with this team has been a game-changer for our business.
-              Exceptional support and attention to detail."
-            </p>
-            <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+          <div className="p-6 slider-item">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <img
+                src="https://img.freepik.com/free-photo/photorealistic-tree-with-branches-trunk-outside-nature_23-2151478142.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+                alt="Client Feedback"
+                className="mb-4 w-full h-40 object-cover rounded-md"
+              />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Highly Recommended
+              </h3>
+              <p className="text-gray-700">
+                "Working with this team has been a game-changer for our business. Exceptional support and attention to detail."
+              </p>
+              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+            </div>
           </div>
-        </div>
 
-        <div className="p-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-            <img
-              src="https://img.freepik.com/premium-photo/wallpaper-illustration_1037184-76993.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
-              alt="Client Feedback"
-              className="mb-4 w-full h-40 object-cover rounded-md"
-            />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Great Results
-            </h3>
-            <p className="text-gray-700">
-              "Their expertise helped us achieve results beyond our initial
-              goals. Truly professional and knowledgeable."
-            </p>
-            <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+          <div className="p-6 slider-item">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <img
+                src="https://img.freepik.com/premium-photo/wallpaper-illustration_1037184-76993.jpg?ga=GA1.1.2000051094.1716005427&semt=ais_hybrid"
+                alt="Client Feedback"
+                className="mb-4 w-full h-40 object-cover rounded-md"
+              />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Great Results
+              </h3>
+              <p className="text-gray-700">
+                "Their expertise helped us achieve results beyond our initial goals. Truly professional and knowledgeable."
+              </p>
+              <p className="mt-4 font-semibold text-blue-600">- Client Name</p>
+            </div>
           </div>
-        </div>
-      </Slider>
-    </div>
-   </section>
-   </>
+        </Slider>
+      </div>
+    </section>
   );
 };
 
